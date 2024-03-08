@@ -234,13 +234,19 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+.btn-color-3 {
+  border: white;
+}
+
 .btn-color-1:hover,
-.btn-color-2:hover {
+.btn-color-2:hover,
+.btn-color-3:hover {
   cursor: pointer;
 }
 
 .btn-color-1,
-.btn-color-2:hover {
+.btn-color-2:hover,
+.btn-color-3:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -249,7 +255,8 @@ section {
   background: rgb(0, 0, 0);
 }
 
-.btn-color-2 {
+.btn-color-2,
+.btn-color-3 {
   background: none;
 }
 
@@ -355,6 +362,17 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+
+.project-details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: black;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  max-width: 250px;
+}
 
 #projects {
   position: relative;
