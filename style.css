@@ -210,12 +210,14 @@ section {
 
 /* ICONS */
 
-.icon, .icon-blog {
+.icon, 
+.icon-blog {
   cursor: pointer;
   height: 2rem;
 }
+
 .icon-blog {
-  transform: scale(1.5);
+  transform: scale(1.5%);
 }
 
 .arrow-up {
