@@ -176,7 +176,6 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  
 }
 
 .section__text {
@@ -211,14 +210,12 @@ section {
 
 /* ICONS */
 
-.icon, 
-.icon-blog {
+.icon, .icon-blog {
   cursor: pointer;
   height: 2rem;
 }
-
 .icon-blog {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.5);
 }
 
 .arrow-up {
@@ -389,7 +386,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
   text-align: center;
   max-width: 250px;
-  
 }
 
 #projects {
