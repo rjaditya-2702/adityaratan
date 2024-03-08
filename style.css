@@ -70,6 +70,8 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  float: right;
+  padding: 20px;
 }
 
 .hamburger-menu {
@@ -213,6 +215,13 @@ section {
   height: 2rem;
 }
 
+.arrow-up {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 2.5rem;
+  right: -5rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -235,6 +244,8 @@ section {
 }
 
 .btn-color-3 {
+  font-size: large;
+  font-weight: 100;
   border: white;
 }
 
