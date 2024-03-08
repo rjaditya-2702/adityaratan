@@ -211,13 +211,18 @@ section {
 /* ICONS */
 
 .icon, 
-.icon-blog {
+.icon-blog,
+.icon-exp {
   cursor: pointer;
   height: 2rem;
 }
 
 .icon-blog {
   transform: scale(1.5, 1.5);
+}
+
+.icon-exp {
+  transform: scale(2,2);
 }
 
 .arrow-up {
