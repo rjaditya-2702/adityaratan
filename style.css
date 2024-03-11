@@ -295,11 +295,19 @@ section {
   position: relative;
 }
 
+.education {
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  font-size: x-large;
+}
+
 .about-containers {
     padding: None;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    /* align-self: center; */
 }
 
 .about-details-container {
@@ -347,6 +355,7 @@ section {
 
 #experience {
   position: relative;
+  height: fit-content;
 }
 
 .experience-sub-title {
