@@ -289,6 +289,32 @@ section {
   gap: 1rem;
 }
 
+.white-button {
+  background-color: white;
+  cursor: pointer;
+}
+.gray-button {
+  background-color: rgb(53,53,53);
+  color: white;
+  cursor: pointer;
+}
+.white-button:hover {
+  background-color: rgb(53,53,53);
+  color: white;
+}
+.white-button:hover ~ .gray-button {
+  background-color: white;
+  color: rgb(53,53,53);
+}
+.gray-button:hover {
+  background-color: rgb(53,53,53);
+  color: white;
+}
+.gray-button:hover ~ .white-button {
+  background-color: white;
+  color: rgb(53,53,53);
+}
+
 /* ABOUT SECTION */
 
 #about {
