@@ -355,7 +355,10 @@ section {
 
 #experience {
   position: relative;
-  height: fit-content;
+  /* height: fit-content; */
+}
+#activities {
+  position: relative;
 }
 
 .experience-sub-title {
