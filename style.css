@@ -152,7 +152,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -341,7 +340,9 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
+.about-containers {
+  display: flex;
+}
 .about-details-container {
   display: flex;
 }
@@ -462,6 +463,7 @@ article .icon {
 /* CONTACT */
 
 #contact {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
