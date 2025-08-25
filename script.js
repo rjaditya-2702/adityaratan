@@ -165,5 +165,5 @@ function initParallax() {
 }
 
 // Initialize parallax when DOM is loaded
-document.addEventListener('DOMContentLoaded', initParallax);
+// document.addEventListener('DOMContentLoaded', initParallax);
 
