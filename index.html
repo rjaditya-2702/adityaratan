@@ -9,17 +9,30 @@
         <link rel="stylesheet" href="mediaqueries.css" />
     </head>
     <body>
-        <nav id="desktop-nav">
-        <!-- <div class="logo">J Aditya Ratan</div> -->
-        <div>
-            <ul class="nav-links">
-            <li><a href="#about"><button class="btn btn-color-3">About</button></a></li>
-            <li><a href="#experience"><button class="btn btn-color-3">Experience</button></a></li>
-            <li><a href="#activities"><button class="btn btn-color-3">Roles</button></a></li>
-            <li><a href="#projects"><button class="btn btn-color-3">Projects</button></a></li>
-            <!-- <li><a href="#contact"><button class="btn btn-color-3">Contact</button></a></li> -->
-            </ul>
+        <!-- Parallax Background Layers -->
+        <div class="parallax-container">
+            <div class="parallax-layer" data-speed="0.2" id="layer1"></div>
+            <div class="parallax-layer" data-speed="0.5" id="layer2"></div>
+            <div class="parallax-layer" data-speed="0.8" id="layer3"></div>
         </div>
+        
+        <div id="main-content">
+        <!-- Left Sidebar Navigation -->
+        <nav id="sidebar-nav" class="sidebar">
+            <div class="sidebar-toggle" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="sidebar-links">
+                    <li><a href="#about"><button class="btn btn-color-3">About</button></a></li>
+                    <li><a href="#experience"><button class="btn btn-color-3">Experience</button></a></li>
+                    <li><a href="#activities"><button class="btn btn-color-3">Roles</button></a></li>
+                    <li><a href="#projects"><button class="btn btn-color-3">Projects</button></a></li>
+                    <li><a href="#contact"><button class="btn btn-color-3">Contact</button></a></li>
+                </ul>
+            </div>
         </nav>
         <nav id="hamburger-nav">
         <!-- <div class="logo">J Aditya Ratan</div> -->
@@ -34,7 +47,7 @@
             <li><a href="#experience" onclick="toggleMenu()"><button class="btn btn-color-3">Experience</button></a></li>
             <li><a href="#activities" onclick="toggleMenu()"><button class="btn btn-color-3">Roles</button></a></li>
             <li><a href="#projects" onclick="toggleMenu()"><button class="btn btn-color-3">Projects</button></a></li>
-            <!-- <li><a href="#contact" onclick="toggleMenu()"><button class="btn btn-color-3">Contact</button></a></li> -->
+            <li><a href="#contact" onclick="toggleMenu()"><button class="btn btn-color-3">Contact</button></a></li>
             </div>
         </div>
         </nav>
@@ -49,7 +62,7 @@
             <div class="btn-container">
                 <button
                     class="btn white-button"
-                    onclick="window.open('./assets/Resume.pdf')"
+                    onclick="window.open('./assets/J Aditya Ratan.pdf')"
                 >
                     Resume
                 </button>
@@ -472,6 +485,7 @@
         </nav> -->
         <p>Copyright &#169; 2024 J Aditya Ratan. All Rights Reserved.</p>
         </footer>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
