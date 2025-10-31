@@ -167,3 +167,73 @@ function initParallax() {
 // Initialize parallax when DOM is loaded
 // document.addEventListener('DOMContentLoaded', initParallax);
 
+function openPDF() {
+    const modal = document.getElementById('pdfModal');
+    const iframe = document.getElementById('pdfFrame');
+    
+    // Set the PDF source
+    iframe.src = './assets/J Aditya Ratan.pdf';
+    
+    // Show the modal
+    modal.classList.add('active');
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+function closePDF() {
+    const modal = document.getElementById('pdfModal');
+    const iframe = document.getElementById('pdfFrame');
+    
+    // Hide the modal
+    modal.classList.remove('active');
+    
+    // Clear the iframe source to stop loading
+    iframe.src = '';
+    
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the PDF container
+document.getElementById('pdfModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closePDF();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closePDF();
+    }
+});
+
+function copyResumeLink() {
+    // Get the full URL to your PDF
+    const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
+    const pdfUrl = baseUrl + '/assets/J Aditya Ratan.pdf';
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(pdfUrl).then(() => {
+        alert('Resume link copied to clipboard!\n\n' + pdfUrl);
+    }).catch((err) => {
+        console.error('Clipboard error:', err);
+        // Fallback for older browsers or if clipboard access is denied
+        const input = document.createElement('input');
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        input.value = pdfUrl;
+        document.body.appendChild(input);
+        input.focus();
+        input.select();
+        try {
+            document.execCommand('copy');
+            alert('Resume link copied to clipboard!\n\n' + pdfUrl);
+        } catch (err) {
+            alert('Could not copy link. Please copy manually:\n\n' + pdfUrl);
+        }
+        document.body.removeChild(input);
+    });
+}
+

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Aditya Ratan's page</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mediaqueries.css" />
-    </head>
-    <body>
-        <!-- Parallax Background Layers -->
-        <!-- <div class="parallax-container">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Ratan's page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <!-- Parallax Background Layers -->
+    <!-- <div class="parallax-container">
             <div class="parallax-layer" data-speed="0.2" id="layer1"></div>
             <div class="parallax-layer" data-speed="0.5" id="layer2"></div>
             <div class="parallax-layer" data-speed="0.8" id="layer3"></div>
         </div> -->
-        
-        <div id="main-content">
+
+    <div id="main-content">
         <!-- Left Sidebar Navigation -->
         <nav id="sidebar-nav" class="sidebar">
             <div class="sidebar-toggle" onclick="toggleSidebar()">
@@ -35,116 +37,107 @@
             </div>
         </nav>
         <nav id="hamburger-nav">
-        <!-- <div class="logo">J Aditya Ratan</div> -->
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <!-- <div class="logo">J Aditya Ratan</div> -->
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()"><button class="btn btn-color-3">About</button></a></li>
+                    <li><a href="#experience" onclick="toggleMenu()"><button
+                                class="btn btn-color-3">Experience</button></a></li>
+                    <li><a href="#activities" onclick="toggleMenu()"><button class="btn btn-color-3">Roles</button></a>
+                    </li>
+                    <li><a href="#projects" onclick="toggleMenu()"><button class="btn btn-color-3">Projects</button></a>
+                    </li>
+                    <li><a href="#contact" onclick="toggleMenu()"><button class="btn btn-color-3">Contact</button></a>
+                    </li>
+                </div>
             </div>
-            <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()"><button class="btn btn-color-3">About</button></a></li>
-            <li><a href="#experience" onclick="toggleMenu()"><button class="btn btn-color-3">Experience</button></a></li>
-            <li><a href="#activities" onclick="toggleMenu()"><button class="btn btn-color-3">Roles</button></a></li>
-            <li><a href="#projects" onclick="toggleMenu()"><button class="btn btn-color-3">Projects</button></a></li>
-            <li><a href="#contact" onclick="toggleMenu()"><button class="btn btn-color-3">Contact</button></a></li>
-            </div>
-        </div>
         </nav>
         <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/dp.png" alt="J Aditya Ratan profile picture"  />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">J Aditya Ratan</h1>
-            <p class="section__text__p2">Graduate Student @ Northeastern University, Boston</p>
-            <div class="btn-container">
-                <button
-                    class="btn white-button"
-                    onclick="window.open('./assets/J Aditya Ratan.pdf')"
-                >
-                    Resume
-                </button>
-                <button 
-                    class="btn gray-button" 
-                    onclick="location.href='./#contact'"
-                >
-                    Contact
-                </button>
+            <div class="section__pic-container">
+                <img src="./assets/dp.png" alt="J Aditya Ratan profile picture" />
             </div>
-            <div id="socials-container">
-            <img
-                src="./assets/linkedin.png"
-                alt="My LinkedIn profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/aditya-ratan-j/'"
-            />
-            <img
-                src="./assets/github.png"
-                alt="My Github profile"
-                class="icon"
-                onclick="location.href='https://github.com/rjaditya-2702'"
-            />
-            <!-- <img
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">J Aditya Ratan</h1>
+                <p class="section__text__p2">Graduate Student @ Northeastern University, Boston</p>
+                <div class="btn-container">
+                    <button class="btn white-button" onclick="openPDF()">
+                        CV
+                    </button>
+                    <button class="btn gray-button" onclick="location.href='./#contact'">
+                        Contact
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/aditya-ratan-j/'" />
+                    <img src="./assets/github.png" alt="My Github profile" class="icon"
+                        onclick="location.href='https://github.com/rjaditya-2702'" />
+                    <!-- <img
                 src="./assets/wordpress.png"
                 alt="My blog"
                 class="icon-blog"
                 onclick="location.href='https://chocolatetoidlysambar.wordpress.com/'"
             /> -->
+                </div>
             </div>
-        </div>
         </section>
         <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <!-- <div class="section__pic-container">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <!-- <div class="section__pic-container">
             <img
                 src="./assets/about-pic.png"
                 alt="Profile picture"
                 class="about-pic"
             />
             </div> -->
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p>
-                        I am currently pursuing Masters in Artificial Intelligence at Northeastern University, Boston. 
-                        We could chat about AI, music, movies, photography, (perhaps life as well). 
-                    </p>
-                    <br>
-                    <p>
-                        AI might take over the world, but until then, I am here to learn and contribute. 
-                        (Maybe I would train it to play my favorite song on its victory day!)
-                    </p>
-                </div>
-                <br />
-                <div class="education">
-                    <!-- <img
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p>
+                            I am currently pursuing Masters in Artificial Intelligence at Northeastern University,
+                            Boston.
+                            We could chat about AI, music, movies, photography, (perhaps life as well).
+                        </p>
+                        <br>
+                        <p>
+                            AI might take over the world, but until then, I am here to learn and contribute.
+                            (Maybe I would train it to play my favorite song on its victory day!)
+                        </p>
+                    </div>
+                    <br />
+                    <div class="education">
+                        <!-- <img
                             src="./assets/education.png"
                             alt="Education icon"
                             class="icon"
                         /> -->
-                    <h1>Education</h1>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="about-containers">
+                        <div class="details-container">
                             <p>
                                 M.S. Artificial Intelligence (2025) <br />
                                 GPA:4.0
-                                <h5>Northeastern University</h5>
+                            <h5>Northeastern University</h5>
                             </p>
                             <p>
                                 <br /><br />
                                 B.Tech Electronics and Communication Engineering (2021) <br />
                                 GPA: 9.11
-                                <h5>Vellore Institute of Technoloy, Chennai</h5>
+                            <h5>Vellore Institute of Technoloy, Chennai</h5>
                             </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <img
+            <!-- <img
             src="./assets/arrow.png"
             alt="Arrow icon"
             class="icon arrow"
@@ -157,27 +150,22 @@
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img
-                            src="./assets/EAI.jpeg"
-                            alt="Experience icon"
-                            class="icon-exp"
-                            onclick="location.href='https://ai.northeastern.edu/ai-solutions-hub'"
-                        />
+                        <img src="./assets/EAI.jpeg" alt="Experience icon" class="icon-exp"
+                            onclick="location.href='https://ai.northeastern.edu/ai-solutions-hub'" />
                         <br><br>
-                        <h5>Institute of Expertiential AI</h5><p>Research Assistant, Generative AI (July 2025 - present)</p><br />
-                        <h5>AI Solutions Hub, Institute of Expertiential AI</h5><p>Data Scientist Co-op, Generative AI (Jan 2025 - August 2025)</p><br />
+                        <h5>Institute of Expertiential AI</h5>
+                        <p>Research Assistant, Generative AI (July 2025 - present)</p><br />
+                        <h5>AI Solutions Hub, Institute of Expertiential AI</h5>
+                        <p>Data Scientist Co-op, Generative AI (Jan 2025 - August 2025)</p><br />
                     </div>
                 </div>
                 <div class="about-containers">
                     <div class="details-container">
-                        <img
-                            src="./assets/amazon.webp"
-                            alt="Experience icon"
-                            class="icon-exp"
-                            onclick="location.href='https://www.amazon.com'"
-                        />
+                        <img src="./assets/amazon.webp" alt="Experience icon" class="icon-exp"
+                            onclick="location.href='https://www.amazon.com'" />
                         <br><br>
-                        <h5>Amazon</h5><p>Application Engineer III (Aug 2021- Aug 2023)</p>
+                        <h5>Amazon</h5>
+                        <p>Application Engineer III (Aug 2021- Aug 2023)</p>
                         <p>Software Support Engineer II Intern (Jan 2021 - Jul 2021)</p><br />
                     </div>
                     <!-- <div class="details-container">
@@ -240,14 +228,11 @@
                 </div>
                 <div class="about-containers">
                     <div class="details-container">
-                        <img
-                            src="./assets/antpod.webp"
-                            alt="Experience icon"
-                            class="icon-exp"
-                            onclick="location.href='https://antpod.io/'"
-                        />
+                        <img src="./assets/antpod.webp" alt="Experience icon" class="icon-exp"
+                            onclick="location.href='https://antpod.io/'" />
                         <br><br>
-                        <h5>Antpod</h5><p>System Development Intern (April 2020 - Dec 2020)</p>
+                        <h5>Antpod</h5>
+                        <p>System Development Intern (April 2020 - Dec 2020)</p>
                     </div>
                 </div>
             </div>
@@ -258,7 +243,7 @@
                 onclick="location.href='./#activities'"
             /> -->
         </section>
-        <section id = "activities">
+        <section id="activities">
             <!-- <img
             src="./assets/arrow.png"
             alt="Arrow icon"
@@ -269,12 +254,8 @@
             <h1 class="title">Roles</h1>
             <div class="about-containers">
                 <div class="details-container">
-                    <img
-                        src="./assets/NEU.png"
-                        alt="Experience icon"
-                        class="icon-exp"
-                        onclick="location.href='https://www.northeastern.edu/'"
-                    />
+                    <img src="./assets/NEU.png" alt="Experience icon" class="icon-exp"
+                        onclick="location.href='https://www.northeastern.edu/'" />
                     <br><br>
                     <!-- <h5>Northeastern University</h5><p>Co-founder, Khoury Robotics Club (Mar 2024 - present)</p><br> -->
                     <p>Graduate Teaching Assistant for CS5100 - Foundations of AI (Jan 2024 - April 2024)</p>
@@ -282,14 +263,11 @@
             </div>
             <div class="about-containers">
                 <div class="details-container">
-                    <img
-                        src="./assets/VIT_logo.png"
-                        alt="Experience icon"
-                        class="icon-exp"
-                        onclick="location.href='https://chennai.vit.ac.in/'"
-                    />
+                    <img src="./assets/VIT_logo.png" alt="Experience icon" class="icon-exp"
+                        onclick="location.href='https://chennai.vit.ac.in/'" />
                     <br><br>
-                    <h5>VIT, Chennai</h5><p>Chairperson, IEEE Student Branch (Jan 2020 - Dec 2020)</p><br>
+                    <h5>VIT, Chennai</h5>
+                    <p>Chairperson, IEEE Student Branch (Jan 2020 - Dec 2020)</p><br>
                     <p>Program Representative, School of Electronics Engineering (Aug 2019 - Apr 2020) </p>
                 </div>
             </div>
@@ -307,135 +285,102 @@
                 class="icon arrow-up"
                 onclick="location.href='./#activities'"
             /> -->
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <p><i>*Some of the repo's are marked private to maintain student honor code. Please request access to view the repo!</i></p>
-            <div class="about-containers">
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                    <img
-                        src="./assets/project-5.png"
-                        alt="Project 1"
-                        class="project-img"
-                    />
-                    </div>
-                    <h3 class="experience-sub-title project-title">Multi agent Tic Tac Toe</h3>
-                    <h5>(June 2024)</h5><br />
-                    <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/30-andrea/RL_Tic-Tac-Toe'"
-                    >
-                        Github
-                    </button>
-                    <!-- <button
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <p><i>*Some of the repo's are marked private to maintain student honor code. Please request access to
+                        view the repo!</i></p>
+                <div class="about-containers">
+                    <div class="project-details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-5.png" alt="Project 1" class="project-img" />
+                        </div>
+                        <h3 class="experience-sub-title project-title">Multi agent Tic Tac Toe</h3>
+                        <h5>(June 2024)</h5><br />
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/30-andrea/RL_Tic-Tac-Toe'">
+                                Github
+                            </button>
+                            <!-- <button
                         class="btn btn-color-2 project-btn"
                         onclick="location.href='https://github.com/rjaditya-2702/LLM-vs-Human-Text-Detection/blob/main/Project_Report.pdf'"
                     >
                         Report
                     </button> -->
+                        </div>
+                    </div>
+                    <div class="project-details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-4.png" alt="Project 1" class="project-img" />
+                        </div>
+                        <h3 class="experience-sub-title project-title">Detecting LLM-Generated Text Using Fine-Tuned
+                            Transformers</h3>
+                        <h5>(Apr 2024)</h5><br />
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/rjaditya-2702/LLM-vs-Human-Text-Detection'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/rjaditya-2702/LLM-vs-Human-Text-Detection/blob/main/Project_Report.pdf'">
+                                Report
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                    <img
-                        src="./assets/project-4.png"
-                        alt="Project 1"
-                        class="project-img"
-                    />
+                <div class="about-containers">
+                    <div class="project-details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                        </div>
+                        <h3 class="experience-sub-title project-title">Spatially Handled Arm Projectile EvadeR (SHAPER)
+                        </h3>
+                        <h5>(Dec 2023)</h5><br />
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Its-a-me-Ashwin/SHAPER'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://youtu.be/7NI3Hp3TcV8'">
+                                Live Demo
+                            </button>
+                        </div>
                     </div>
-                    <h3 class="experience-sub-title project-title">Detecting LLM-Generated Text Using Fine-Tuned Transformers</h3>
-                    <h5>(Apr 2024)</h5><br />
-                    <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/rjaditya-2702/LLM-vs-Human-Text-Detection'"
-                    >
-                        Github
-                    </button>
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/rjaditya-2702/LLM-vs-Human-Text-Detection/blob/main/Project_Report.pdf'"
-                    >
-                        Report
-                    </button>
+                    <div class="project-details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                        </div>
+                        <h3 class="experience-sub-title project-title">Simple Image Processor</h3>
+                        <h5>(Dec 2023)</h5><br />
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/rjaditya-2702/CS5010-ImageProcessor'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://youtu.be/-gNrjoQZfcE'">
+                                Live Demo
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="about-containers">
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                    <img
-                        src="./assets/project-1.png"
-                        alt="Project 1"
-                        class="project-img"
-                    />
-                    </div>
-                    <h3 class="experience-sub-title project-title">Spatially Handled Arm Projectile EvadeR (SHAPER)</h3>
-                    <h5>(Dec 2023)</h5><br />
-                    <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/Its-a-me-Ashwin/SHAPER'"
-                    >
-                        Github
-                    </button>
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://youtu.be/7NI3Hp3TcV8'"
-                    >
-                        Live Demo
-                    </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/project-2.png"
-                            alt="Project 2"
-                            class="project-img"
-                        />
-                    </div>
-                    <h3 class="experience-sub-title project-title">Simple Image Processor</h3>
-                    <h5>(Dec 2023)</h5><br />
-                    <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/rjaditya-2702/CS5010-ImageProcessor'"
-                    >
-                        Github
-                    </button>
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://youtu.be/-gNrjoQZfcE'"
-                    >
-                        Live Demo
-                    </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                    <img
-                        src="./assets/project-3.png"
-                        alt="Project 3"
-                        class="project-img"
-                    />
-                    </div>
-                    <h3 class="experience-sub-title project-title">Linked Sparse Matrix implementation</h3>
-                    <h5>(Nov 2023)</h5><br />
-                    <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/rjaditya-2702/MatrixOperations'"
-                    >
-                        Github
-                    </button>
+                    <div class="project-details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                        </div>
+                        <h3 class="experience-sub-title project-title">Linked Sparse Matrix implementation</h3>
+                        <h5>(Nov 2023)</h5><br />
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/rjaditya-2702/MatrixOperations'">
+                                Github
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <img
+            <!-- <img
             src="./assets/arrow.png"
             alt="Arrow icon"
             class="icon arrow"
@@ -449,30 +394,22 @@
                 class="icon arrow-up"
                 onclick="location.href='./#projects'"
             /> -->
-        <p class="section__text__p1">Do you want to</p>
-        <h1 class="title">Contact Me?</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-            <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:jadityaratan@gmail.com">personal</a></p><br />
-            <p><a href="mailto:jannali.a@northeastern.edu">school</a></p>
+            <p class="section__text__p1">Do you want to</p>
+            <h1 class="title">Contact Me?</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:jadityaratan@gmail.com">personal</a></p><br />
+                    <p><a href="mailto:jannali.a@northeastern.edu">school</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com/in/aditya-ratan-j/">LinkedIn</a></p>
+                </div>
             </div>
-            <div class="contact-info-container">
-            <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/aditya-ratan-j/">LinkedIn</a></p>
-            </div>
-        </div>
         </section>
         <footer>
-        <!-- <nav>
+            <!-- <nav>
             <div class="nav-links-container">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -483,9 +420,47 @@
             </ul>
             </div>
         </nav> -->
-        <p>Copyright &#169; 2024 J Aditya Ratan. All Rights Reserved.</p>
+            <p>Copyright &#169; 2024 J Aditya Ratan. All Rights Reserved.</p>
         </footer>
+    </div>
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-container">
+            <div class="pdf-header">
+                <h3>CV</h3>
+                <div class="header-buttons">
+                    <button class="share-btn" onclick="copyResumeLink()">Share</button>
+                    <button class="close-btn" onclick="closePDF()">Close</button>
+                </div>
+            </div>
+            <div class="pdf-viewer">
+                <iframe id="pdfFrame" src=""></iframe>
+            </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Close modal when clicking outside the PDF container
+            const pdfModal = document.getElementById('pdfModal');
+            if (pdfModal) {
+                pdfModal.addEventListener('click', function (e) {
+                    if (e.target === this) {
+                        closePDF();
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    const modal = document.getElementById('pdfModal');
+                    if (modal && modal.classList.contains('active')) {
+                        closePDF();
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
 </html>
