@@ -695,24 +695,6 @@ footer p {
     color: #333;
 }
 
-.share-btn {
-    background: #f5f4f4;
-    color: rgb(3, 3, 3);
-    border: rgb(3,3,3);
-    padding: 8px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s ease;
-    flex-wrap: wrap;
-    justify-content: right;
-}
-
-.share-btn:hover {
-    background: #262525;
-    color: #ffffff;
-}
-
 .close-btn {
     background: #f5f4f4;
     color: rgb(3, 3, 3);
