@@ -181,6 +181,13 @@ function openPDF() {
     document.body.style.overflow = 'hidden';
 }
 
+function openPDFWithURL() {
+    openPDF();
+    // Update URL without page reload
+    history.pushState(null, '', '/cv');
+}
+
+// Updated closePDF function with URL reset
 function closePDF() {
     const modal = document.getElementById('pdfModal');
     const iframe = document.getElementById('pdfFrame');
@@ -193,7 +200,25 @@ function closePDF() {
     
     // Restore body scroll
     document.body.style.overflow = 'auto';
+    
+    // Reset URL to main page
+    const currentPath = window.location.pathname;
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    if (currentPath.endsWith('/cv') || urlParams.get('view') === 'cv') {
+        history.pushState(null, '', '/');
+    }
 }
+
+// Handle Escape key to close modal
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('pdfModal');
+        if (modal && modal.classList.contains('active')) {
+            closePDF();
+        }
+    }
+});
 
 // Close modal when clicking outside the PDF container
 document.getElementById('pdfModal').addEventListener('click', function(e) {
