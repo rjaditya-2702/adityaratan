@@ -237,7 +237,7 @@ document.addEventListener('keydown', function(e) {
 function copyResumeLink() {
     // Get the full URL to your PDF
     const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
-    const pdfUrl = baseUrl + '/assets/J Aditya Ratan.pdf';
+    const pdfUrl = baseUrl + '/assets/CV.pdf';
     
     // Copy to clipboard
     navigator.clipboard.writeText(pdfUrl).then(() => {
